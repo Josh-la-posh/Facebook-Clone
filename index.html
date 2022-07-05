@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/397b65162c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-box">
+
+        <!--NAVBAR-->
+        <div class="nav">
+            <div class="nav-left">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <div class="search-box-container" onclick="InputSearchDisplay()">
+                    <div class="search">
+                        <span><i class="fa-solid fa-arrow-left"></i></span>
+                        <div class="search-box">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Search Me" />
+                        </div>
+                    </div>
+                    <div class="search-text">
+                        <p>No recent searches</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-user-icon">
+                    <span><i class="fa fa-solid fa-plus"></i></span>
+                    <span><i class="fa fa-brands fa-facebook-messenger"></i></span>
+                    <span><i class="fa fa-solid fa-bell"></i></span>
+                    <div class="online" onclick="SettingsMenuToggle()">
+                        <img src="images/profile-pic.jpg" />
+                    </div>
+                </div>
+            </div>
+
+                        <!--FOR THE SETTINGS MENU-->
+            
+            <div class="settings-menu">
+                <div id="dark-btn"><span></span></div>
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpg" alt="Photo">
+                        <div>
+                            <p>Joshua Fajobi</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div> <hr />
+                </div>
+
+                <div class="user-profile">
+                    <span><i class="fa-solid fa-message-exclamation"></i></span>
+                    <div>
+                        <p>Give feedback</p>
+                        <small>Help us improve My Website</small>
+                    </div>
+                </div>  <hr />
+
+                <div class="settings-link">
+                    <span><i class="fa fa fa-solid fa-gear"></i></span>
+                    <a href="#">Settings & privacy <span><i class="fa-solid fa-angle-right"></i></span></a>
+                </div>
+
+                <div class="settings-link">
+                    <span><i class="fa fa-solid fa-circle-question"></i></i></span>
+                    <a href="#">Help & support <span><i class="fa-solid fa-angle-right"></i></span></a>
+                </div>
+
+                <div class="settings-link">
+                    <span><i class="fa fa-solid fa-moon"></i></i></span>
+                    <a href="#">Display & accessibility <span><i class="fa-solid fa-angle-right"></i></span></i></a>
+                </div>
+
+                <div class="settings-link">
+                    <span><i class="fa fa-solid fa-right-from-bracket"></i></span>
+                    <a href="#">Log Out <img src="images/layout.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+                <!--BODY-->
+
+        <div class="container">
+
+                        <!-- LEFT SIDEBAR -->
+            <section class="left-sidebar">
+                <div class="imp-links">
+                    <a href="#"><img src="images/profile-pic.jpg" alt="Photo" id="left-pic">Joshua Fajobi</a>
+                    <a href="#"><span><i class="fa-solid fa-user-group"></i></span><p>Friends</p></a>
+                    <a href="#"><span><i class="fa-solid fa-users"></i></span> <p>Group</p></a>
+                    <a href="#"><img src="images/marketplace.png" alt="news"><p>Marketplace</p></a>
+                    <a href="#"><span><i class="fa-solid fa-tv"></i></span> <p>Watch</p></a>
+                    <a href="#"><span><i class="fa-solid fa-chevron-down"></i></span><p>See more</p></a>
+                </div>
+
+                <div class="shortcut-links">
+                    <p><strong>Your shortcuts</strong></p>
+                    <a href="#"><img src="images/shortcut-1.jpeg" alt="Photo">Web Developers</a>
+                    <a href="#"><img src="images/shortcut-2.jpeg" alt="Photo">Web Design Course</a>
+                    <a href="#"><img src="images/shortcut-3.jpeg" alt="Photo">Full Stack Development</a>
+                    <a href="#"><img src="images/shortcut-4.jpeg" alt="Photo">Web Experts</a>
+                </div>
+
+                <!-- <div class="leftbar-footer">
+                    <div class="leftbar-footer-links">
+                        <a href="#">Privary</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Ad choices</a>
+                        <a href="#">Cookies</a><br >
+                        <a href="#">More</a>
+                        <p>Meta &copy; 2022</p>
+                    </div>
+
+                </div> -->
+            </section>
+
+                            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story story-1">
+                        <img src="images/add.png" />
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story story-2">
+                        <img src="images/member-1.jpg" />
+                        <p>Emmanuel</p>
+                    </div>
+                    <div class="story story-3">
+                        <img src="images/member-2.jpg" />
+                        <p>Chineme</p>
+                    </div>
+                    <div class="story story-4">
+                        <img src="images/member-3.jpg" />
+                        <p>SkyUnit</p>
+                    </div>
+                    <div class="story story-5">
+                        <img src="images/member-4.jpg" />
+                        <p>Sweet Faith</p>
+                    </div>
+                </div>
+    
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpg" alt="Photo" />
+                        <div>
+                            <p>Joshua Fajobi</p>
+                            <small>Public <FontAwesomeIcon icon="fa-solid fa-sort-down" /></small>
+                        </div>
+                    </div>
+    
+                    <div class="post-input-container">
+                        <textarea rows="2" placeholder="What's on your mind"></textarea>
+    
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/video.png" color='white'/>Live Video</a>
+                            <a href="#"><img src="images/photo.png" />Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png" />Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 25 2022, 02:11 am</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-1.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"/>120</div>
+                            <div><img src="images/comments.png"/>45</div>
+                            <div><img src="images/share.png"/>20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 24 2022, 22:44 pm</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-2.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png"/>116</div>
+                            <div><img src="images/comments.png"/>89</div>
+                            <div><img src="images/share.png"/>37</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 23 2022, 14:03 pm</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-3.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"/>76</div>
+                            <div><img src="images/comments.png"/>55</div>
+                            <div><img src="images/share.png"/>12</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 24 2022, 16:14 pm</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-4.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png"/>734</div>
+                            <div><img src="images/comments.png"/>423</div>
+                            <div><img src="images/share.png"/>308</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 20 2022, 15:32 pm</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-5.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png"/>296</div>
+                            <div><img src="images/comments.png"/>128</div>
+                            <div><img src="images/share.png"/>139</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.jpg" alt="Photo" />
+                            <div>
+                                <p>Joshua Fajobi</p>
+                                <small>April 12 2022, 09:17 am</small>
+                            </div>
+                        </div>
+                        <a href="#"><FontAwesomeIcon icon="fa-solid fa-ellipsis-v" /></a>
+                    </div>
+                    
+                    <p>
+                        Subscibe to my channel for more videos on website development and UI designs. <a href="https://github.com/Josh-la-posh">#JoshGit</a> 
+                    </p>
+                    <img src="images/feed-image-6.jpeg" class='post-img'/>
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png"/>98</div>
+                            <div><img src="images/comments.png"/>32</div>
+                            <div><img src="images/share.png"/>12</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.jpg" />
+                            <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                        </div>
+                    </div>
+                </div>
+    
+                <button type='button' class='load-more-btn'>Load More</button>
+            </div>
+
+                        <!-- RIGHT SIDEBAR -->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+    
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                        <a href="#">More info</a>
+                    </div>
+                </div>
+                
+    
+                <div class="event">
+                    <div class="left-event">
+                        <h3>22</h3>
+                        <span>June</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                        <a href="#">More info</a>
+                    </div>
+                </div>
+    
+    
+                 <!-- ----------ADVERTISEMENT----------  -->
+    
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+    
+                <img src="images/advertisement.jpeg" alt="Photo" class='sidebar-ads' />
+    
+    
+                <!-----------CONVERSATION------------>
+    
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+    
+                <div class="online-list-member">
+                    <div class="online-list">
+                        <div class="online"><img src="images/member-1.jpg" alt="Photo" /></div>
+                        <p>Emmanuel</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online"><img src="images/member-2.jpg" alt="Photo" /></div>
+                        <p>Chineme</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online"><img src="images/member-3.jpg" alt="Photo" /></div>
+                        <p>Skyunit</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online"><img src="images/member-4.jpg" alt="Photo" /></div>
+                        <p>Sweet Faith</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online"><img src="images/member-5.jpg" alt="Photo" /></div>
+                        <p>FeyiJimi</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>&copy; 2022 - My First Complete Homepag</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
